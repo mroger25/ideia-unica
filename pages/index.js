@@ -4,12 +4,8 @@ function Home() {
   return (
     <div>
       <h1>Home</h1>
-      <div>
-        <Link href="/tempo">Acessar página Tempo</Link>
-      </div>
-      <div>
-        <Link href="/sobre">Acessar página Sobre</Link>
-      </div>
+      <Link href="/tempo">Acessar página Tempo</Link>
+      <Link href="/sobre">Acessar página Sobre</Link>
     </div>
   );
 }
