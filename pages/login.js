@@ -13,6 +13,8 @@ const Login = () => {
 
     if (username === "user" && password === "password") {
       router.push("/dashboard");
+    } else if (username === "admin" && password === "password") {
+      router.push("/admin");
     } else {
       setError("Credenciais inválidas. Por favor, tente novamente.");
     }
