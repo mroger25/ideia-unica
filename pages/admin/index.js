@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const AdminDashboard = () => {
   return (
@@ -15,9 +16,23 @@ const AdminDashboard = () => {
         <h1>Painel de Administração</h1>
         <p>
           Bem-vindo ao painel de administração. Aqui você pode gerenciar
-          equipes, turnos, etc.
+          equipes, turnos, solicitações e muito mais.
         </p>
-        {/* Adicione componentes e funcionalidades específicas do painel de administração */}
+        <ul>
+          <li>
+            <Link href={"/admin/teams"}>Gerenciar Equipes</Link>
+          </li>
+          <li>
+            <Link href={"/admin/shifts"}>Gerenciar Turnos</Link>
+          </li>
+          <li>
+            <Link href={"/admin/requests"}>Aprovar Solicitações</Link>
+          </li>
+          <li>
+            <Link href={"/admin/reports"}>Gerar Relatórios</Link>
+          </li>
+          {/* Adicione mais links para outras funcionalidades de administração, conforme necessário */}
+        </ul>
       </main>
     </div>
   );
